@@ -1,0 +1,72 @@
+:root{
+    --bg-color: rgb(8, 33, 70);
+    --bg-div: rgb(238, 229, 212);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: var(--bg-div);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-top: 200px;
+}
+
+.prev,.next{
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(93, 93, 180);
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.prev:hover,.next:hover{
+    background-color: rgb(37, 37, 112);
+}
+
+ul{
+    display: flex;
+    gap: 8px;
+}
+
+li{
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: rgb(188, 188, 228);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+li.active{
+    background-color: rgb(117, 117, 207);
+    color: rgb(233, 226, 226);
+}
+
+li:hover{
+    background-color: rgb(37, 37, 112);
+}
+
+.prev:disabled,.next:disabled{
+    cursor: pointer;
+    background-color: rgb(168, 168, 168);
+}
